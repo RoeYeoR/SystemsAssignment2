@@ -23,17 +23,17 @@ int main() {
                  int i, j;
                 printf("Enter i and j to check if there is a path: ");
                 scanf("%d %d", &i, &j);
-                printf("Path from %d to %d: %s\n", i, j, isPath(graph, i, j) ? "True" : "False");
+                printf("Path from %d to %d: %s\n", i, j, isValidPath(graph, i, j) ? "True" : "False");
                 break;
 
             case 'C':
-                printf("Enter i and j to find the shortest route: ");
+                printf("Enter i and j to find the shortest path: ");
                 scanf("%d %d", &i, &j);
-                int shortest = shortestRoute(graph, i, j);
+                int shortest = shortestPath(graph, i, j);
                 if (shortest == -1) {
-                printf("No route exists.\n");
+                printf("No path exists.\n");
                 } else {
-                printf("Shortest route from %d to %d: %d\n", i, j, shortest);
+                printf("Shortest path from %d to %d: %d\n", i, j, shortest);
                 }
                 break;
 
