@@ -6,8 +6,8 @@
 #define SIZE 10
 
 // Function prototypes
-void inputMatrix(int graph[SIZE][SIZE]);
-bool isPathExist(int graph[SIZE][SIZE], int i, int j);
-int shortestPath(int graph[SIZE][SIZE], int i, int j);
+void inputMatrix(int**, int);
+bool isPathExist(int**, int, int, int);
+int shortestPath(int**, int, int, int);
 
 #endif 
