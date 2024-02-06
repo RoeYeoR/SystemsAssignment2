@@ -7,7 +7,7 @@
 
 // Function prototypes
 void inputMatrix(int graph[SIZE][SIZE]);
-bool isValidPath(int graph[SIZE][SIZE], int i, int j);
+bool isPathExist(int graph[SIZE][SIZE], int i, int j);
 int shortestPath(int graph[SIZE][SIZE], int i, int j);
 
 #endif 

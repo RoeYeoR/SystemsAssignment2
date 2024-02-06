@@ -21,7 +21,7 @@ int main() {
             case 'B':
 
                 scanf("%d %d", &i, &j);
-                printf(isValidPath(graph, i, j) ? "True" : "False");
+                printf(isPathExist(graph, i, j) ? "True" : "False");
                 break;
 
             case 'C':
