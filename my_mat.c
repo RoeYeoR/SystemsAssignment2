@@ -40,6 +40,9 @@ int shortestPath(int graph[SIZE][SIZE], int i, int j) {
 
         for (int count = 0; count < SIZE - 1; count++) {
             int u = minDistance(dist, visited);
+             if (u == -1) {
+                return -1;
+            }
 
             visited[u] = true;
 
@@ -56,7 +59,7 @@ int shortestPath(int graph[SIZE][SIZE], int i, int j) {
 }
 
 int minDistance(int dist[SIZE], bool visited[SIZE]) {
-    int min = INT_MAX, min_index;
+    int min = INT_MAX, min_index = -1;
 
     for (int v = 0; v < SIZE; v++) {
         if (visited[v] == false && dist[v] <= min) {
