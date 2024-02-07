@@ -4,15 +4,16 @@
 
 int main() {
 
-    //int graph[SIZE][SIZE] ={0};
+   
     int i, j;
     char action;
 
-    
+    // Allocate memory for 'graph' array
     int **graph = (int**) malloc(SIZE * sizeof(int*));
 
     for (int i = 0; i < SIZE; ++i)
-        graph[i] = (int*) malloc(SIZE * sizeof(int));
+            graph[i] = (int*) malloc(SIZE * sizeof(int));
+
 
     do {
         
@@ -49,7 +50,7 @@ int main() {
         }
     } while (action != 'D');
 
-    
+    // Deallocate memory from 'graph' array
     for (int i = 0; i < SIZE; ++i)
         free(graph[i]);
 

@@ -5,7 +5,6 @@
 
 #define SIZE 10
 
-// Function prototypes
 void inputMatrix(int**, int);
 bool isPathExist(int**, int, int, int);
 int shortestPath(int**, int, int, int);

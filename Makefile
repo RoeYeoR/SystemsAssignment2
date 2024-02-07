@@ -1,7 +1,7 @@
 CC = gcc
 AR = ar
 CFLAGS = -Wall -g
-AFLAGS = rcs
+
 
 .PHONY: all clean
 
@@ -17,7 +17,7 @@ my_mat.o: my_mat.c my_mat.h
 	$(CC) $(CFLAGS) -c $<	
 
 libmymath.a: my_mat.o
-	$(AR) $(AFLAGS) $@ $<
+	$(AR) rcs $@ $<
 
 
 clean:
