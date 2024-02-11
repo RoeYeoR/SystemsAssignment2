@@ -37,7 +37,7 @@ int knapSack(int weights[], int values[], int selected_bool[]) {
 int main() {
 
  int weights[MAX_ITEMS], values[MAX_ITEMS], selected_bool[MAX_ITEMS] = {0};
-
+ char result[MAX_ITEMS];
  char items[MAX_ITEMS];
 
     for (int i = 0; i < MAX_ITEMS; i++) 
@@ -57,8 +57,11 @@ int main() {
     for (int i = 0; i < MAX_ITEMS; i++) {
 
         if (selected_bool[i])
-
+        {
+            
+            result[i] = items[i];
             printf(" %c", items[i]);
+        }
 
     }
 
